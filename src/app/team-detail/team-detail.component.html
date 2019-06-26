@@ -1,0 +1,13 @@
+<h1>{{ title }}</h1>
+<h3>Hometown: {{ hometown }}</h3>
+<ul *ngFor='let account of socialMedia'>
+    <li>
+      <a href='{{ account.url }}' target='_blank'>{{ account.platformName }}</a>
+    </li>
+  </ul>
+  <br/>
+<div *ngFor='let player of players'>
+    <app-player-profile [playerInfo]='player'></app-player-profile>
+</div>
+<br/>
+  <button class='btn btn-primary' (click)='goBack()'>Go Back</button>

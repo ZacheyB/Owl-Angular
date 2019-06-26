@@ -1,0 +1,10 @@
+<h1>{{ playerInfo.name }}</h1>
+<img src='{{ playerInfo.headshotUrl }}'/> <br />
+<app-team [teamInfo]='teamInfo'></app-team>
+<ul *ngFor='let account of socialMedia'>
+  <li>
+    <a href='{{ account.url }}' target='_blank'>{{ account.platformName }}</a>
+  </li>
+</ul>
+<br/>
+<button class='btn btn-primary' (click)='goBack()'>Go Back</button>

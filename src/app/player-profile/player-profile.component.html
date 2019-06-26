@@ -1,0 +1,10 @@
+<div routerLink='/players/{{ playerInfo.id }}'>
+<h3>{{ playerInfo.name }} </h3>
+<h4>{{ playerInfo.team }}</h4>
+<img src='{{ playerInfo.headshotUrl }}' width='150'/>
+<h3>Top Heroes</h3>
+<div *ngFor='let hero of playerInfo.favoriteHeroes'>
+  <img src='{{ heroIcons[hero] }}' width='20'/>
+  {{ hero}}
+</div>
+</div>

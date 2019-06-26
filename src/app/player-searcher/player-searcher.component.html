@@ -1,0 +1,6 @@
+<form autocomplete="off">
+  <input type='text' class='form-control col-md-4' name='playerSearch' [(ngModel)]='playerName' (ngModelChange)='updateFilters()' placeholder="Search a player by name"/>
+</form>
+<div *ngFor='let player of players'>
+<app-player-profile [playerInfo]='player'></app-player-profile>
+</div>

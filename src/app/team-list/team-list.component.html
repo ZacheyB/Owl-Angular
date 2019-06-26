@@ -1,0 +1,4 @@
+<h2>Teams</h2>
+<div *ngFor='let team of teamList'>
+  <app-team routerLink='/teams/{{ team.id }}' [teamInfo]='team'></app-team>
+</div>
